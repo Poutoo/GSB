@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '/home/administrateur/vs/React/GSB Project/GSB/src/pages/index.css';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faGear, faRightFromBracket} from '@fortawesome/free-solid-svg-icons';
-import { AuthContext } from '/home/administrateur/vs/React/GSB Project/GSB/src/context/AuthContext.jsx'; // Assurez-vous du chemin correct
+import { AuthContext } from '../context/AuthContext.jsx'; // Assurez-vous du chemin correct
 import { useProfile } from '../context/ProfileContext';
 import { useBanner } from '../context/BannerContext';
 

@@ -4,6 +4,7 @@ import Index from './pages/index.jsx';
 import Accueil from './pages/accueil/accueil.jsx';
 import Medecins from './pages/accueil/medecins.jsx';
 import Rapports from './pages/accueil/rapports.jsx';
+import Visiteur from './pages/accueil/visiteur.jsx'; // Ajoutez cette ligne avec les autres imports
 import FicheMedecin from './composants/ficheMedecin.jsx';
 import Profile from './pages/accueil/profile.jsx'; // Importer le nouveau composant Profile
 import './pages/index.css';
@@ -66,6 +67,11 @@ const router = createBrowserRouter([
       {
         path: 'profile', // Ajouter la route pour le profil
         element: <Profile />
+      },
+
+      {
+        path: 'visiteur', // Ajouter la route pour le visiteur
+        element: <Visiteur />
       },
     ],
   },

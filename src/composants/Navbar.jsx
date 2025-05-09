@@ -12,6 +12,8 @@ const navigation = [
   { name: 'Accueil', href: '/accueil', current: true },
   { name: 'Rapports', href: '/accueil/rapports', current: false },
   { name: 'Medecins', href: '/accueil/medecins', current: false },
+  { name: 'Visiteur', href: '/accueil/visiteur', current: false },
+
 ];
 
 function classNames(...classes) {
@@ -115,7 +117,7 @@ export default function Example() {
                 <MenuItem>
                   {({ active }) => (
                     <Link
-                      to="#"
+                      to="/accueil/visiteur"
                       className={classNames(active ? 'bg-gray-100 dark:bg-zinc-900' : '', 'block px-4 py-2 text-sm text-gray-700 dark:text-white')}
                     > 
                       <FontAwesomeIcon icon={faGear} style={{ marginRight: '9px' }}/>
